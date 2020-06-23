@@ -1,0 +1,36 @@
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+%link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+%visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+//шапка
+
+%flex {
+  display: flex;
+  align-items: center;
+}

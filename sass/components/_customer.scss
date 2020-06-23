@@ -1,0 +1,44 @@
+.customer {
+  .container {
+    @extend %container;
+  }
+  .list {
+    @extend %list;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .link {
+    @include flex-mix(flex, center, center);
+    @include bsize(170px, 90px);
+    color: $color-social-links;
+    @include tranzition(color);
+    text-decoration: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+      @include tranzition(color);
+    }
+  }
+  .item {
+    margin-right: 30px;
+    width: calc((100% - 60px) / 6);
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    @include tranzition(border);
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-text-color;
+      @include tranzition(border);
+    }
+  }
+
+  .customer-icon {
+    fill: currentColor;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,89 @@
+.section {
+  &.team {
+    background-color: $color-bg-child;
+  }
+}
+
+.team {
+  .container {
+    @extend %container;
+  }
+  .list {
+    @extend %list;
+  }
+  .link {
+    @extend %link;
+    color: $color-social-links;
+  }
+  .section.team {
+    background-color: var(--color-bg-child);
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img {
+    display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
+    margin-bottom: 30px;
+  }
+
+  .item.cards {
+    background-color: var(--primary-white-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  }
+
+  .team-title {
+    margin-top: 0;
+
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    text-align: center;
+  }
+
+  .team-position {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primery-text-color);
+  }
+
+  .list.icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .item.social {
+    margin-right: 10px;
+  }
+
+  .item.social:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  .social-icon {
+    fill: currentColor;
+  }
+}

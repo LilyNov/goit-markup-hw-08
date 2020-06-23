@@ -1,0 +1,21 @@
+@mixin fontz($fw, $fs, $fh, $fls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $fh;
+  letter-spacing: $fls;
+}
+
+@mixin tranzition($v) {
+  transition: $v 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin bsize($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin flex-mix($d, $ai, $jc) {
+  display: $d;
+  align-items: $ai;
+  justify-content: $jc;
+}
