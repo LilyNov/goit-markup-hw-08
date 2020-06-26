@@ -309,13 +309,13 @@ body {
 .page-footer {
   .input {
     @media screen and (max-width: 479px) {
-      width: 450px;
+      max-width: 450px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 480px) {
       display: inline-flex;
       align-items: center;
-      width: 463px;
+      max-width: 463px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 1200px) {

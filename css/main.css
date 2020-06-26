@@ -383,7 +383,7 @@ body {
 
 @media screen and (max-width: 479px) {
   .page-footer .input {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -396,7 +396,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 463px;
+    max-width: 463px;
     margin-bottom: 20px;
   }
 }
