@@ -1,18 +1,23 @@
+.section {
+  @media screen and (max-width: 479px) {
+    width: 479px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  &.team {
+    background-color: $color-bg-child;
+  }
+}
+
 .customer {
   .container {
     @extend %container;
-
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-    }
   }
   .list {
     @extend %list;
