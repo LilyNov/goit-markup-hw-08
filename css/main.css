@@ -368,10 +368,6 @@ body {
 }
 
 .page-footer .input {
-  margin-right: 12px;
-}
-
-.input {
   padding: 12px 18px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -386,13 +382,14 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-  .input {
+  .page-footer .input {
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .input {
+@media screen and (min-width: 480px) {
+  .page-footer .input {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -405,7 +402,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .input {
+  .page-footer .input {
     width: 358px;
   }
 }
@@ -854,10 +851,21 @@ body {
   letter-spacing: 0.06em;
 }
 
+@media screen and (max-width: 1199px) {
+  .hero .hero-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    padding-top: 118px;
+  }
+}
+
 .hero .button {
   min-width: 200px;
   padding: 10px 32px;
   text-align: center;
+  margin-bottom: 118px;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;

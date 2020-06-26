@@ -44,13 +44,18 @@
     padding-top: 200px;
     color: $primary-white-color;
     text-transform: uppercase;
-    @include fontz(900, 44px, 1.36, 00.06em);
+    @media screen and (max-width: 1199px) {
+      @include fontz(900, 26px, 1.61, 0.06em);
+      padding-top: 118px;
+    }
+    @include fontz(900, 44px, 1.36, 0.06em);
   }
 
   .button {
     min-width: 200px;
     padding: 10px 32px;
     text-align: center;
+    margin-bottom: 118px;
 
     text-decoration: none;
     @include fontz(700, 16px, 1.88, 0.06em);
