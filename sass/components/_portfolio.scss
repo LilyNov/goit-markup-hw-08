@@ -1,0 +1,200 @@
+.projects {
+  @media screen and (max-width: 479px) {
+    position: relative;
+    width: 479px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  border-top: 1px solid #ececec;
+  .container {
+    @extend %container;
+  }
+
+  .list {
+    @extend %list;
+    @media screen and (max-width: 479px) {
+      &.container-btn {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        margin-bottom: 40px;
+        text-align: center;
+        li {
+          margin-right: 8px;
+          &:nth-child(-n + 3) {
+            margin-bottom: 15px;
+          }
+          &:nth-last-child(3) {
+            margin-right: 0;
+          }
+          &:nth-child(5n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &.container-btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 94px;
+        margin-bottom: 50px;
+        text-align: center;
+        li {
+          margin-right: 8px;
+          &:nth-child(5n) {
+            margin-right: 0;
+          }
+        }
+      }
+      &.cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 94px;
+      }
+    }
+  }
+}
+
+.button {
+  padding: 6px 22px;
+  font-family: inherit;
+  text-align: center;
+  @include fontz(500, 16px, 1.63, 00.03em);
+
+  border: transparent;
+  border-radius: 4px;
+  color: $title-text-color;
+  background: #f5f4fa;
+  @include tranzition(background-color);
+  @include tranzition(color);
+  @include tranzition(box-shadow);
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-text-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.projects-item {
+  @media screen and (max-width: 479px) {
+    &:nth-child(-n + 8) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc(
+      (100% - 60px) / 3
+    ); //100% ширины родителя минус margin между колонками (30px*) делим на 3 колонки
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  &:hover .text-projects {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .box {
+    position: relative;
+  }
+  .link {
+    @extend %link;
+    color: $primery-text-color;
+    display: block;
+    &:focus .text-projects {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+img {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    height: 294px;
+  }
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0px 0px;
+}
+.title-primary {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.title-projects {
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-top: 20px;
+  @include fontz(700, 18px, 2, 0.06em);
+  color: $title-text-color;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-bottom: 20px; //для полного фокуса карточки задаю не margin-bottom а  padding-bottom: 20px
+  padding-left: 24px;
+  color: $primery-text-color;
+  @include fontz(400, 16px, 1.88, 0.03em);
+}
+
+.text-projects {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media screen and (max-width: 479px) {
+    @include bsize(450px, 294px);
+    padding: 77px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+    @include bsize(370px, 294px);
+  }
+
+  @include fontz(400, 18px, 1.87, 0.03em);
+
+  color: $primary-white-color;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 1;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards .link:hover,
+.cards .link:focus {
+  @include tranzition(box-shadow);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.box {
+  overflow: hidden;
+}
