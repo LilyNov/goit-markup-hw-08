@@ -1,0 +1,112 @@
+.section.advantage {
+  @media screen and (min-width: 1200px) {
+    border: 1px solid #ececec;
+  }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.advantage {
+  .container {
+    @extend %container;
+
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+  .list {
+    @extend %list;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  .item {
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+      width: calc((100% - 90px) / 4);
+      &:nth-child(4n) {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .background-icon {
+    @media screen and (max-width: 479px) {
+      @include bsize(450px, 120px);
+    }
+
+    @media screen and (min-width: 480px) {
+      @include bsize(270px, 120px);
+    }
+
+    @include flex-mix(flex, center, center);
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+  }
+
+  .text {
+    padding: 0;
+  }
+}
+
+.antenna-icon {
+  @include bsize(65px, 70px);
+  align-items: center;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  @include fontz(700, 36px, 1.16, 00.03em);
+  color: $title-text-color;
+}
+
+.advantage-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  @include fontz(700, 14px, 1.14, 00.03em);
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
+}
+
+.advantage {
+  p {
+    margin-top: 0;
+
+    @include fontz(400, 14px, 1.71, 00.03em);
+    @media screen and (max-width: 479px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+}
