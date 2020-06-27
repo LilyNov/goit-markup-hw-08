@@ -1,15 +1,27 @@
 .section.advantage {
   @media screen and (max-width: 767px) {
     width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1600px;
     border-bottom: 1px solid #ececec;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -27,10 +39,19 @@
 .advantage {
   .container {
     @extend %container;
+    @media screen and (max-width: 767px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
   .list {
     @extend %list;
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
@@ -50,18 +71,13 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin-right: 30px;
-      width: calc((100% - 90px) / 4);
-      &:nth-child(4n) {
-        margin-right: 0;
-        margin-bottom: 0;
-      }
+      width: calc((100% - 8 * 15px) / 4);
     }
   }
 
   .background-icon {
     @media screen and (max-width: 767px) {
-      @include bsize(450px, 120px);
+      @include bsize(100%, 120px);
     }
 
     @media screen and (min-width: 768px) {

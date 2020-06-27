@@ -9,8 +9,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   border-top: 1px solid #ececec;
   .container {
     @extend %container;

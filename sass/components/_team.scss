@@ -1,39 +1,52 @@
 .section.team {
+  width: 100%;
+  background-color: $color-bg-child;
+
   @media screen and (max-width: 767px) {
-    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-  &.team {
-    background-color: $color-bg-child;
+    width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .team {
   .container {
     @extend %container;
-  }
-
-  .list {
-    @extend %list;
+    @media screen and (max-width: 767px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
   .link {
     @extend %link;
     color: $color-social-links;
   }
-  .section.team {
-    background-color: $color-bg-child;
-  }
 
   .list {
-    @media screen and (min-width: 768px) {
+    @extend %list;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
@@ -45,9 +58,10 @@
     }
   }
 
+  //ДОРАБОТАТЬ!!!!
   img {
     @media screen and (max-width: 767px) {
-      width: 100%;
+      width: 300px;
       height: 320px;
     }
     display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
@@ -62,7 +76,7 @@
       }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
       padding-bottom: 24px;

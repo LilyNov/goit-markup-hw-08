@@ -1,23 +1,18 @@
 .section.hero {
-  padding-top: 0;
-  padding-bottom: 0;
-
   @media screen and (max-width: 767px) {
     width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1600px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

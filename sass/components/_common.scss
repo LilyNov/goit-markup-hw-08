@@ -9,22 +9,26 @@ body {
 // }
 
 .page-header {
-  @media screen and (max-width: 767px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-
   position: relative;
   background-color: $primary-white-color;
   &.container {
-    @extend %container;
+    @media screen and (max-width: 767px) {
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .list {
     @extend %list;
@@ -37,7 +41,17 @@ body {
 //Навигация и логотип
 
 .main-header {
-  width: 100%;
+  @extend %container;
+  @media screen and (max-width: 767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
   @extend %flex;
   justify-content: space-between;
 
@@ -235,26 +249,28 @@ body {
 //Футер
 
 .page-footer {
-  @media screen and (max-width: 767px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
-  &.team {
-    background-color: $color-bg-child;
-  }
-
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $foot-primery-color;
   color: $primary-white-color;
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .foot-child,
   .foot-link {
@@ -265,6 +281,15 @@ body {
 
   .container {
     @extend %container;
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 327px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
   .link {
     @extend %link;
@@ -335,13 +360,13 @@ body {
 .page-footer {
   .input {
     @media screen and (max-width: 767px) {
-      width: 450px;
+      width: 100%;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 768px) {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      max-width: 463px;
+      width: 463px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 1200px) {
