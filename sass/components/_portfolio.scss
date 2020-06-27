@@ -1,15 +1,15 @@
 .projects {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     position: relative;
-    width: 479px;
+    width: 480px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
   }
   border-top: 1px solid #ececec;
   .container {
@@ -18,7 +18,7 @@
 
   .list {
     @extend %list;
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       &.container-btn {
         display: flex;
         flex-wrap: wrap;
@@ -86,7 +86,7 @@
 }
 
 .projects-item {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     &:nth-child(-n + 8) {
       margin-bottom: 30px;
     }
@@ -127,7 +127,7 @@
 }
 
 img {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
     height: 294px;
   }
@@ -167,7 +167,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     @include bsize(450px, 294px);
     padding: 77px 24px;
   }

@@ -1,14 +1,14 @@
-.section {
-  @media screen and (max-width: 479px) {
-    width: 479px;
+.section.team {
+  @media screen and (max-width: 767px) {
+    width: 480px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
   }
   &.team {
     background-color: $color-bg-child;
@@ -18,17 +18,6 @@
 .team {
   .container {
     @extend %container;
-    // @media screen and (max-width: 479px) {
-    //   width: 479px;
-    // }
-
-    // @media screen and (min-width: 480px) {
-    //   width: 768px;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //   max-width: 1200px;
-    // }
   }
 
   .list {
@@ -44,6 +33,12 @@
   }
 
   .list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
     @media screen and (min-width: 1200px) {
       display: flex;
       justify-content: space-between;
@@ -51,7 +46,7 @@
   }
 
   img {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       width: 100%;
       height: 320px;
     }
@@ -60,11 +55,17 @@
   }
 
   .item.cards {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       padding-bottom: 24px;
       &:not(:last-child) {
         margin-bottom: 30px;
       }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+      padding-bottom: 24px;
     }
 
     background-color: $primary-white-color;

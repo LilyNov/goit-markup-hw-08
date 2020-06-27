@@ -9,16 +9,16 @@ body {
 // }
 
 .page-header {
-  @media screen and (max-width: 479px) {
-    width: 479px;
+  @media screen and (max-width: 767px) {
+    width: 480px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    width: 1200px;
   }
 
   position: relative;
@@ -109,7 +109,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  max-width: 479px;
+  max-width: 480px;
   width: 100%;
   height: 393px;
   padding-top: 20px;
@@ -128,7 +128,7 @@ body {
 //навигация сайта
 
 .main-nav {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 }
@@ -146,7 +146,7 @@ body {
   }
   .link {
     position: relative;
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       display: inline-block;
       padding-top: 40px;
       padding-bottom: 12px;
@@ -189,7 +189,7 @@ body {
   //   margin-left: 30px;
   // }
   .link {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       display: inline-block;
     }
     // display: inline-flex;
@@ -197,7 +197,7 @@ body {
     // @include fontz(500, 14px, 1.14, 00.02em);
     color: $primery-text-color;
     @include tranzition(color);
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       @include fontz(500, 18px, 1.16, 0.02em);
     }
 
@@ -213,7 +213,7 @@ body {
   }
 
   .mail.link {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 12px;
     }
   }
@@ -235,11 +235,11 @@ body {
 //Футер
 
 .page-footer {
-  @media screen and (max-width: 479px) {
-    width: 479px;
+  @media screen and (max-width: 767px) {
+    width: 480px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
 
@@ -258,7 +258,7 @@ body {
 
   .foot-child,
   .foot-link {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 60px;
     }
   }
@@ -334,11 +334,11 @@ body {
 
 .page-footer {
   .input {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       width: 450px;
       margin-bottom: 20px;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       display: inline-flex;
       align-items: center;
       max-width: 463px;
@@ -439,7 +439,7 @@ body {
 // Модальное окно - фон общий*/
 
 .backdrop {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 1199px) {
     padding: 95px 16px;
     overflow-y: scroll;
   }

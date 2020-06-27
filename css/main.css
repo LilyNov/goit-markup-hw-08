@@ -268,6 +268,7 @@ summary {
 }
 
 .page-header.container, .page-footer .container, .advantage .container, .doing .container, .team .container, .customer .container, .projects .container {
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -294,13 +295,13 @@ body {
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .page-header {
-    width: 479px;
+    width: 480px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .page-header {
     width: 768px;
   }
@@ -308,7 +309,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .page-header {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -396,7 +397,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  max-width: 479px;
+  max-width: 480px;
   width: 100%;
   height: 393px;
   padding-top: 20px;
@@ -410,7 +411,7 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .main-nav {
     margin-bottom: 60px;
   }
@@ -431,7 +432,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .site-nav .link {
     display: inline-block;
     padding-top: 40px;
@@ -476,13 +477,13 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .cont-nav .link {
     display: inline-block;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .cont-nav .link {
     font-weight: 500;
     font-size: 18px;
@@ -506,7 +507,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .cont-nav .mail.link {
     margin-bottom: 12px;
   }
@@ -536,13 +537,13 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .page-footer {
-    width: 479px;
+    width: 480px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .page-footer {
     width: 768px;
   }
@@ -558,7 +559,7 @@ body {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .page-footer .foot-child,
   .page-footer .foot-link {
     margin-bottom: 60px;
@@ -672,14 +673,14 @@ body {
   outline: none;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .page-footer .input {
     width: 450px;
     margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .page-footer .input {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -799,7 +800,7 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 1199px) {
   .backdrop {
     padding: 95px 16px;
     overflow-y: scroll;
@@ -1094,23 +1095,33 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1199px) {
-  .section {
+.section.hero {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .section.hero {
+    width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.hero {
+    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
+  .section.hero {
+    width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
-}
-
-.section.hero {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .hero {
@@ -1124,6 +1135,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero > .overley {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hero .hero-title {
@@ -1165,9 +1185,22 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .section.advantage {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.advantage {
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section.advantage {
-    border: 1px solid #ececec;
+    width: 1200px;
+    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -1183,21 +1216,14 @@ body {
   overflow: hidden;
 }
 
-@media screen and (max-width: 479px) {
-  .advantage .container {
-    width: 479px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .advantage .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantage .container {
-    max-width: 1200px;
+@media screen and (max-width: 1199px) {
+  .advantage .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1209,9 +1235,16 @@ body {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .advantage .item {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage .item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
@@ -1240,14 +1273,21 @@ body {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .advantage .background-icon {
     width: 450px;
     height: 120px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .advantage .background-icon {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .advantage .background-icon {
     width: 270px;
     height: 120px;
@@ -1284,7 +1324,7 @@ body {
   color: var(--title-text-color);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .advantage-title {
     text-align: center;
   }
@@ -1299,7 +1339,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .advantage .text:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1319,7 +1359,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .doing .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -1363,25 +1403,25 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 479px) {
-  .section {
-    width: 479px;
+@media screen and (max-width: 767px) {
+  .section.team {
+    width: 480px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .section {
+@media screen and (min-width: 768px) {
+  .section.team {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
-    max-width: 1200px;
+  .section.team {
+    width: 1200px;
   }
 }
 
-.section.team {
+.section.team.team {
   background-color: #f5f4fa;
 }
 
@@ -1391,6 +1431,17 @@ body {
 
 .team .section.team {
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 768px) {
+  .team .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1410,7 +1461,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .team img {
     width: 100%;
     height: 320px;
@@ -1424,12 +1475,20 @@ body {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .team .item.cards {
     padding-bottom: 24px;
   }
   .team .item.cards:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team .item.cards {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    padding-bottom: 24px;
   }
 }
 
@@ -1497,26 +1556,22 @@ body {
   fill: currentColor;
 }
 
-@media screen and (max-width: 479px) {
-  .section {
-    width: 479px;
+@media screen and (max-width: 767px) {
+  .section.customer {
+    width: 480px;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .section {
+@media screen and (min-width: 768px) {
+  .section.customer {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
-    max-width: 1200px;
+  .section.customer {
+    width: 1200px;
   }
-}
-
-.section.team {
-  background-color: #f5f4fa;
 }
 
 .customer .list {
@@ -1525,7 +1580,7 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .customer .list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1560,7 +1615,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .customer .link {
     margin: auto;
   }
@@ -1581,7 +1636,7 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .customer .item {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
@@ -1613,14 +1668,14 @@ body {
   border-top: 1px solid #ececec;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .projects {
     position: relative;
-    width: 479px;
+    width: 480px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .projects {
     width: 768px;
   }
@@ -1628,11 +1683,11 @@ body {
 
 @media screen and (min-width: 1200px) {
   .projects {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .projects .list.container-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1719,7 +1774,7 @@ body {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .projects-item:nth-child(-n + 8) {
     margin-bottom: 30px;
   }
@@ -1767,7 +1822,7 @@ img {
   border-radius: 5px 5px 0px 0px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   img {
     width: 100%;
     height: 294px;
@@ -1825,7 +1880,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .text-projects {
     width: 450px;
     height: 294px;

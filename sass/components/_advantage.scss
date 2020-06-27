@@ -1,11 +1,16 @@
 .section.advantage {
-  @media screen and (min-width: 1200px) {
-    border: 1px solid #ececec;
+  @media screen and (max-width: 767px) {
+    width: 480px;
   }
 
-  // @media screen and (max-width: 479px) {
-  //   max-width: 479px;
-  // }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .visually-hidden {
@@ -22,28 +27,26 @@
 .advantage {
   .container {
     @extend %container;
-
-    @media screen and (max-width: 479px) {
-      width: 479px;
-    }
-
-    @media screen and (min-width: 480px) {
-      width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-    }
   }
   .list {
     @extend %list;
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
     }
   }
   .item {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -57,11 +60,15 @@
   }
 
   .background-icon {
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 767px) {
       @include bsize(450px, 120px);
     }
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
+      @include bsize(354px, 120px);
+    }
+
+    @media screen and (min-width: 1200px) {
       @include bsize(270px, 120px);
     }
 
@@ -90,7 +97,7 @@
   @include fontz(700, 14px, 1.14, 00.03em);
   text-transform: uppercase;
   color: var(--title-text-color);
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
@@ -99,9 +106,9 @@
   .text {
     margin-top: 0;
     padding: 0;
-
     @include fontz(400, 14px, 1.71, 00.03em);
-    @media screen and (max-width: 479px) {
+
+    @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
       }
