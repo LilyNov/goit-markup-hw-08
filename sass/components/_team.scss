@@ -60,11 +60,11 @@
 
   //ДОРАБОТАТЬ!!!!
   img {
-    @media screen and (max-width: 767px) {
-      width: 300px;
-      height: 320px;
-    }
-    display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
+    // @media screen and (max-width: 767px) {
+    //   width: 270px;
+    //   height: 320px;
+    // }
+    // display: block; /* занимает местопо ширине родителя-блока, пропадает 4px снизу картинки */
     margin-bottom: 30px;
   }
 

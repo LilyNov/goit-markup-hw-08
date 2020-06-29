@@ -8,6 +8,12 @@ body {
 //   overflow: hidden;
 // }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .page-header {
   position: relative;
   background-color: $primary-white-color;
