@@ -953,6 +953,11 @@ img {
   .backdrop {
     padding: 95px 16px;
     overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -986,7 +991,7 @@ img {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (max-width: 1199px) {
   .modal {
     min-width: 450px;
     min-height: 609px;
@@ -1026,7 +1031,7 @@ img {
   padding: 40px;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (max-width: 1199px) {
   .form {
     width: 450px;
     height: 609px;
@@ -1216,11 +1221,23 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .text.consent {
+    font-size: 12px;
+  }
+}
+
 .text-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .text-link {
+    font-size: 12px;
+  }
 }
 
 .button-submit {
@@ -1279,7 +1296,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero > .overley {
     height: 600px;
-    max-width: 1600px;
+    width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }

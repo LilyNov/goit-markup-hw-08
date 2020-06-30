@@ -527,6 +527,11 @@ img {
   @media screen and (max-width: 1199px) {
     padding: 95px 16px;
     overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -550,7 +555,7 @@ img {
 /* Модальное окно - фон формы */
 
 .modal {
-  @media screen and (min-width: 680px) {
+  @media screen and (max-width: 1199px) {
     min-width: 450px;
     min-height: 609px;
   }
@@ -599,7 +604,7 @@ img {
 /* Модальное окно - форма */
 
 .form {
-  @media screen and (min-width: 680px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
     height: 609px;
   }
@@ -773,6 +778,9 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .text-link {
@@ -780,6 +788,9 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: $accent-text-color;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .button-submit {
