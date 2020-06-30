@@ -25,9 +25,13 @@ img {
     }
 
     @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
       width: 768px;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -47,23 +51,27 @@ img {
 //Навигация и логотип
 
 .main-header {
-  @extend %container;
+  display: flex;
+
   @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    justify-content: space-between;
     width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-
-  @extend %flex;
-  justify-content: space-between;
-
-  @media screen and (max-width: 480px) {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 
   .logo-head {
@@ -92,56 +100,67 @@ img {
 //бургер меню
 
 .menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  &:hover,
-  &:focus .icon-menu {
-    fill: $accent-text-color;
-    cursor: pointer;
-  }
-
-  &:hover,
-  &:focus .icon-cross {
-    fill: $accent-text-color;
-    cursor: pointer;
-  }
-
-  .icon-cross {
-    display: none;
-  }
-
-  &.is-open {
-    .icon-cross {
-      display: block;
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    &:hover,
+    &:focus .icon-menu {
+      fill: $accent-text-color;
+      cursor: pointer;
     }
-    .icon-menu {
+
+    &:hover,
+    &:focus .icon-cross {
+      fill: $accent-text-color;
+      cursor: pointer;
+    }
+
+    .icon-cross {
       display: none;
     }
+
+    &.is-open {
+      .icon-cross {
+        display: block;
+      }
+      .icon-menu {
+        display: none;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
 .menu-container {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
 
-  position: absolute;
-  top: 100%;
-  left: 0;
-  max-width: 480px;
-  width: 100%;
-  height: 393px;
-  padding-top: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-width: 480px;
+    width: 100%;
+    height: 393px;
+    padding-top: 20px;
 
-  background-color: $primary-white-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 4px 8px rgba(0, 0, 0, 0.04);
+    background-color: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
 
-  text-align: center;
+    text-align: center;
 
-  &.is-open {
-    display: block;
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
@@ -153,11 +172,18 @@ img {
   }
 }
 .site-nav {
-  // display: flex;
-  // margin-left: 85px;
-  // .item:nth-child(n + 1) {
-  //   margin-left: 50px;
-  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 81px;
+    .item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 85px;
+  }
+
   .link.current {
     color: $accent-text-color;
     &::after {
@@ -166,6 +192,9 @@ img {
   }
   .link {
     position: relative;
+    color: $title-text-color;
+    @include tranzition(color);
+
     @media screen and (max-width: 767px) {
       display: inline-block;
       padding-top: 40px;
@@ -173,12 +202,20 @@ img {
       @include fontz(500, 18px, 1.16, 0.02em);
     }
 
-    // display: block;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-    // @include fontz(500, 14px, 1, 0.02em);
-    color: $title-text-color;
-    @include tranzition(color);
+    @media screen and (min-width: 768px) {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      @include fontz(500, 14px, 1, 0.02em);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      @include fontz(500, 14px, 1, 0.02em);
+    }
+
     &::after {
       position: absolute;
       content: '';
@@ -203,26 +240,38 @@ img {
 }
 
 .cont-nav {
-  // margin-left: auto;
-  // @extend %flex;
-  // > .item.phone {
-  //   margin-left: 30px;
-  // }
-  .link {
-    @media screen and (max-width: 767px) {
-      display: inline-block;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    > .item.phone {
+      margin-left: 30px;
     }
-    // display: inline-flex;
-    // align-items: center;
-    // @include fontz(500, 14px, 1.14, 00.02em);
+  }
+
+  .link {
     color: $primery-text-color;
     @include tranzition(color);
+
     @media screen and (max-width: 767px) {
+      display: inline-block;
       @include fontz(500, 18px, 1.16, 0.02em);
     }
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       @include fontz(500, 12px, 1.16, 0.02em);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      align-items: center;
+      @include fontz(500, 14px, 1.14, 00.02em);
     }
 
     &:hover,
@@ -255,7 +304,6 @@ img {
 //Футер
 
 .page-footer {
-  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $foot-primery-color;
@@ -263,19 +311,19 @@ img {
   text-align: center;
 
   @media screen and (max-width: 767px) {
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .foot-child,
@@ -290,8 +338,12 @@ img {
     @media screen and (max-width: 767px) {
       width: 450px;
     }
+
     @media screen and (min-width: 768px) {
-      width: 327px;
+      width: 768px;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
       width: 1200px;
@@ -366,14 +418,16 @@ img {
 .page-footer {
   .input {
     @media screen and (max-width: 767px) {
-      width: 100%;
+      width: 450px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
-      width: 463px;
+      width: 450px;
       margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
     }
     @media screen and (min-width: 1200px) {
       width: 358px;
