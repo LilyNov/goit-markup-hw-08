@@ -48,7 +48,7 @@
   .list {
     @extend %list;
     &.cards {
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
+      @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -77,6 +77,11 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
     }
 

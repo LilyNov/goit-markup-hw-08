@@ -51,8 +51,8 @@
       margin: -15px;
     }
 
-    @media screen {
-      justify-content: space-evenly;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
     }
   }
   .link {
@@ -83,11 +83,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin-right: 30px;
-      width: calc((100% - 60px) / 6);
-      &:nth-child(6n) {
-        margin-right: 0;
-      }
+      width: calc((100% - 12 * 15px) / 6);
     }
 
     border: 1px solid #afb1b8;

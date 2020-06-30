@@ -70,10 +70,6 @@ img {
     padding: 0;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-
   .logo-head {
     @extend %link;
     font-family: $font-logo;
@@ -170,18 +166,23 @@ img {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 81px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 85px;
+    outline: 2px solid red;
+  }
 }
 .site-nav {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 81px;
     .item:not(:last-child) {
       margin-right: 50px;
     }
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: 85px;
   }
 
   .link.current {

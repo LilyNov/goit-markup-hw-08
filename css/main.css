@@ -355,12 +355,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .main-header {
-    width: 1200px;
-  }
-}
-
 .main-header .logo-head {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -464,23 +458,29 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .main-nav {
     margin-left: 81px;
-  }
-  .site-nav .item:not(:last-child) {
-    margin-right: 50px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .site-nav {
+  .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 85px;
+    outline: 2px solid red;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .site-nav .item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -1645,7 +1645,7 @@ img {
   color: #afb1b8;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .team .list.cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1690,6 +1690,13 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team .item.cards {
     width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team .item.cards {
+    width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
 }
@@ -1823,11 +1830,10 @@ img {
   }
 }
 
-@media screen {
+@media screen and (min-width: 1200px) {
   .customer .list {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -1887,11 +1893,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .customer .item {
-    margin-right: 30px;
-    width: calc((100% - 60px) / 6);
-  }
-  .customer .item:nth-child(6n) {
-    margin-right: 0;
+    width: calc((100% - 12 * 15px) / 6);
   }
 }
 
