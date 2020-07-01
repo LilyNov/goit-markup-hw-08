@@ -1,18 +1,12 @@
 .section.advantage {
   @media screen and (max-width: 767px) {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
@@ -20,8 +14,6 @@
     border-bottom: 1px solid #ececec;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -40,7 +32,7 @@
   .container {
     @extend %container;
     @media screen and (max-width: 767px) {
-      width: 480px;
+      max-width: 480px;
     }
     @media screen and (min-width: 768px) {
       width: 768px;

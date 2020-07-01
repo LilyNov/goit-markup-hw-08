@@ -268,7 +268,6 @@ summary {
 }
 
 .page-footer .container, .advantage .container, .doing .container, .team .container, .customer .container, .projects .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -294,7 +293,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-header.container {
-    width: 480px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -342,7 +341,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 480px;
+    max-width: 480px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -448,18 +447,16 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 81px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .main-nav {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .main-nav {
-    margin-left: 81px;
   }
 }
 
@@ -562,13 +559,6 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .cont-nav {
-    margin-left: auto;
-    margin-left: 84px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .cont-nav {
     margin-left: auto;
@@ -662,7 +652,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-footer {
-    width: 480px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1263,7 +1253,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .section.hero {
-    width: 480px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1272,6 +1262,8 @@ img {
 @media screen and (min-width: 768px) {
   .section.hero {
     width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1280,6 +1272,8 @@ img {
     width: 1600px;
     padding-top: 0;
     padding-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1343,21 +1337,15 @@ img {
 
 @media screen and (max-width: 767px) {
   .section.advantage {
-    width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .section.advantage {
-    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1367,8 +1355,6 @@ img {
     border-bottom: 1px solid #ececec;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1386,7 +1372,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .advantage .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -1595,7 +1581,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .section.team {
-    width: 480px;
+    max-width: 480px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 60px;
@@ -1625,7 +1611,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .team .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -1730,7 +1716,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .team .list.icon {
+    margin-bottom: 24px;
+  }
 }
 
 .team .item.social {
@@ -1762,7 +1753,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .section.customer {
-    width: 480px;
+    max-width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: auto;
@@ -1792,7 +1783,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .customer .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -1915,7 +1906,7 @@ img {
 @media screen and (max-width: 767px) {
   .projects {
     position: relative;
-    width: 480px;
+    max-width: 480px;
   }
 }
 
