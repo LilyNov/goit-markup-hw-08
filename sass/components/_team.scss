@@ -1,18 +1,7 @@
 .section.team {
   background-color: $color-bg-child;
 
-  @media screen and (max-width: 767px) {
-    max-width: 480px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    margin-right: auto;
-    margin-left: auto;
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -21,8 +10,6 @@
     width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -61,7 +48,7 @@
     }
   }
 
-  img {
+  .img-team {
     display: block;
     max-width: 100%;
     height: auto;

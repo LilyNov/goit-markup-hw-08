@@ -1,22 +1,24 @@
 .projects {
+  border-top: 1px solid #ececec;
+
   @media screen and (max-width: 767px) {
     position: relative;
-    max-width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  border-top: 1px solid #ececec;
   .container {
     @extend %container;
+
+    @media screen and (max-width: 767px) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
   .list {
@@ -129,15 +131,23 @@
   }
 }
 
-img {
+.img-portfolio {
+  border-radius: 5px 5px 0px 0px;
+
   @media screen and (max-width: 767px) {
-    width: 100%;
+    width: 450px;
     height: 294px;
   }
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px 5px 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
 }
 .title-primary {
   margin-top: 0;

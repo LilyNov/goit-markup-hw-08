@@ -1,26 +1,18 @@
 .section.customer {
   @media screen and (max-width: 767px) {
-    max-width: 480px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 

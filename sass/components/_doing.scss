@@ -6,14 +6,13 @@
     width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 .doing {
   .container {
     @extend %container;
+    width: 1200px;
   }
 
   .list {
