@@ -1275,6 +1275,7 @@ img {
 @media screen and (min-width: 1200px) {
   .section.hero {
     max-width: 1600px;
+    height: 600px;
     padding-top: 0;
     padding-bottom: 0;
   }
