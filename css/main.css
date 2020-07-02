@@ -317,7 +317,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .page-header.container {
-    width: 1600px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1263,6 +1263,14 @@ img {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .section.hero {
+    width: 1600px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .overley {
   background-color: #757575;
   background-repeat: no-repeat;
@@ -1425,6 +1433,10 @@ img {
 @media screen and (max-width: 767px) {
   .advantage .item {
     width: 100%;
+    margin-bottom: 30px;
+  }
+  .advantage .item:last-child {
+    margin-bottom: 0;
   }
 }
 

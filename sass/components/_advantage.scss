@@ -55,6 +55,10 @@
   .item {
     @media screen and (max-width: 767px) {
       width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     @media screen and (min-width: 768px) {
