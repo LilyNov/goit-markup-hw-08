@@ -964,7 +964,7 @@ img {
 /* Модальное окно - фон формы */
 .modal {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -985,9 +985,6 @@ img {
   .modal {
     width: 450px;
     min-height: 609px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
   }
 }
 
