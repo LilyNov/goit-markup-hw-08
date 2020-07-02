@@ -20,7 +20,7 @@ img {
 
   &.container {
     @extend %container;
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
       width: 480px;
     }
 
@@ -319,7 +319,7 @@ img {
 
   .container {
     @extend %container;
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
       width: 480px;
     }
 
@@ -407,8 +407,7 @@ img {
 .page-footer {
   .input {
     @media screen and (max-width: 767px) {
-      max-width: 100%;
-      width: 450px;
+      width: 100%;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {

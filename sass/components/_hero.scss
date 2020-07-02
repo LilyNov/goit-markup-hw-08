@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     max-width: 480px;
     height: 400px;
   }
