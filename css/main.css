@@ -1966,14 +1966,12 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .projects .list {
+  .projects .list.container-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
-    padding-bottom: 60px;
   }
 }
 
@@ -1995,12 +1993,22 @@ img {
   .projects .list.container-btn li:nth-child(5n) {
     margin-right: 0;
   }
-  .projects .list.cards {
+}
+
+@media screen and (min-width: 768px) {
+  .list.cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list.cards {
     padding-bottom: 94px;
   }
 }
