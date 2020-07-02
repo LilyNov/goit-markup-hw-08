@@ -293,7 +293,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-header.container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
@@ -668,7 +668,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-footer .container {
-    width: 450px;
+    width: 480px;
   }
 }
 
@@ -1260,9 +1260,22 @@ img {
   margin-right: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .section.hero {
+    max-width: 480px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.hero {
+    max-width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section.hero {
-    width: 1600px;
+    max-width: 1600px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -1371,7 +1384,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section.advantage {
-    width: 1600px;
     border-bottom: 1px solid #ececec;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1392,7 +1404,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .advantage .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
@@ -1550,7 +1562,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section.doing {
-    width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1614,7 +1625,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section.team {
-    width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1622,7 +1632,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .team .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
@@ -1762,14 +1772,7 @@ img {
   fill: currentColor;
 }
 
-@media screen and (max-width: 767px) {
-  .section.customer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .section.customer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1778,7 +1781,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section.customer {
-    width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1786,7 +1788,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .customer .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
