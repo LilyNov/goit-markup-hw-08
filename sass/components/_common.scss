@@ -20,9 +20,6 @@ img {
 
   &.container {
     @extend %container;
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -34,6 +31,7 @@ img {
       width: 1200px;
     }
   }
+
   .list {
     @extend %list;
   }

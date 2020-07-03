@@ -156,22 +156,15 @@
 
 .img-portfolio {
   border-radius: 5px 5px 0px 0px;
-
-  @media screen and (max-width: 767px) {
-    width: 450px;
-    height: 294px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 294px;
-  }
+  width: 100%;
+  height: auto;
 
   @media screen and (min-width: 1200px) {
     width: 370px;
     height: 294px;
   }
 }
+
 .title-primary {
   margin-top: 0;
   margin-bottom: 0;
