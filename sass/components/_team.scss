@@ -55,10 +55,10 @@
   }
 
   .item.cards {
+    padding-bottom: 24px;
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
-        padding-bottom: 24px;
       }
     }
 
@@ -106,10 +106,6 @@
   .list.icon {
     display: flex;
     justify-content: center;
-
-    @media screen and (min-width: 768px) {
-      margin-bottom: 24px;
-    }
   }
 
   .item.social {

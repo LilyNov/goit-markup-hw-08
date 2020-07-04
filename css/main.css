@@ -1670,6 +1670,7 @@ img {
 }
 
 .team .item.cards {
+  padding-bottom: 24px;
   background-color: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -1679,7 +1680,6 @@ img {
 @media screen and (max-width: 767px) {
   .team .item.cards:not(:last-child) {
     margin-bottom: 30px;
-    padding-bottom: 24px;
   }
 }
 
@@ -1726,12 +1726,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .team .list.icon {
-    margin-bottom: 24px;
-  }
 }
 
 .team .item.social {
