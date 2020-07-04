@@ -48,17 +48,19 @@
     text-decoration: none;
     cursor: pointer;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
       margin: auto;
-      @include bsize(210px, 90px);
+      max-width: 210px;
+      height: 90px;
     }
 
     @media screen and (min-width: 768px) {
-      @include bsize(226px, 90px);
+      max-width: 226px;
+      height: 90px;
     }
 
     @media screen and (min-width: 1200px) {
-      @include bsize(170px, 90px);
+      max-width: 170px;
     }
 
     &:hover,

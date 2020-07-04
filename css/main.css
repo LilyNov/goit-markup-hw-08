@@ -1839,25 +1839,24 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .customer .link {
     margin: auto;
-    width: 210px;
+    max-width: 210px;
     height: 90px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .customer .link {
-    width: 226px;
+    max-width: 226px;
     height: 90px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .customer .link {
-    width: 170px;
-    height: 90px;
+    max-width: 170px;
   }
 }
 
