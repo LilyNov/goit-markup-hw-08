@@ -1930,7 +1930,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 392px) and (max-width: 767px) {
   .projects .list.container-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1952,6 +1952,13 @@ img {
   }
   .projects .list.container-btn li:nth-child(5n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .projects .list.container-btn li {
+    margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1992,6 +1999,12 @@ img {
   }
   .projects .list.container-btn li:nth-child(5n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list.cards {
+    padding-bottom: 60px;
   }
 }
 
